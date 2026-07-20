@@ -1,25 +1,25 @@
 class Cuet < Formula
   desc "CLI for managing infrastructure deployment using the cuet framework"
   homepage "https://github.com/medulla-sh/cuet"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.2.0/cuet-0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c7aedfafa506b18913e85d8cb75af7bd2d05f885699769a8e4c7f5650df1ae7c"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.3.0/cuet-0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "fa0aeae65f8c4c98f115e678a308f6d76c6babf5ffebce88179254ae659fc11c"
     else
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.2.0/cuet-0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "a017f74e2250a71aa4d3b4fe3efddd5a1da3169c0f92eed6e89b8b03b86102bb"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.3.0/cuet-0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "a95ff92d6ebfd6b5122216611fe3cbe3b84f80e0a0b4a3a3c7fb5b619fe9668d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.2.0/cuet-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "844dba03310e9f26d214d2936173fcc77c0f6fa66467ede50df8db8114e3fd35"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.3.0/cuet-0.3.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7d083960f77784ef6a6f576afa212a6e7402565478a59a5e1b866c549a4658a6"
     else
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.2.0/cuet-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0f74ba9d05c4e8cd9c2daf40fef71a86e26048bb3f8f789e5698079a35eab294"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.3.0/cuet-0.3.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8855e37d2f9d20636426c18f7c0524e9216b12f28c700cf4d87109198379a155"
     end
   end
 
