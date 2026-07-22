@@ -3,6 +3,10 @@ class Cuet < Formula
   homepage "https://github.com/medulla-sh/cuet"
   version "$version"
 
+  depends_on "cue" => :recommended
+  depends_on "opentofu" => :recommended
+  depends_on "tfmigrate" => :recommended
+
   on_macos do
     if Hardware::CPU.arm?
       url "$macos_arm_url"
