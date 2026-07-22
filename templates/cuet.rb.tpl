@@ -25,9 +25,13 @@ class Cuet < Formula
 
   def install
     bin.install "cuet"
+    generate_completions_from_executable bin/"cuet", "completions"
   end
 
   test do
     system "#{bin}/cuet", "--help"
+    assert_path_exists bash_completion/"cuet"
+    assert_path_exists fish_completion/"cuet.fish"
+    assert_path_exists zsh_completion/"_cuet"
   end
 end
