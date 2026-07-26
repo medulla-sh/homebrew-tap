@@ -1,7 +1,7 @@
 class Cuet < Formula
   desc "CLI for managing infrastructure deployment using the cuet framework"
   homepage "https://github.com/medulla-sh/cuet"
-  version "0.4.2"
+  version "0.5.0"
 
   depends_on "cue" => :recommended
   depends_on "opentofu" => :recommended
@@ -9,21 +9,21 @@ class Cuet < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.4.2/cuet-0.4.2-aarch64-apple-darwin.tar.gz"
-      sha256 "d669c9509c5a919695136ec5911563990b5132985008a9412ab9498457cd836c"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.5.0/cuet-0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "13d5117e9b6295e99fd830b6058c788425cabff3d871492bea2eaa88efe832e6"
     else
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.4.2/cuet-0.4.2-x86_64-apple-darwin.tar.gz"
-      sha256 "1e68dca12bf7854d9db765c8527739b0cc10d766b04bb00d98b58d8c6a5fe178"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.5.0/cuet-0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "3be7267aae91041b31f491bfd234d03685a6d96ab69b368d18a203b81410dfbb"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.4.2/cuet-0.4.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cdf4feb3ae32012367f940f67da2726323d62f4aeeda58626b0df2a3f89855bf"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.5.0/cuet-0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cbc8e732eb12ae298c6aa87ae559c994abdac5bcb3ea90f387ad40e76202c3b3"
     else
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.4.2/cuet-0.4.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8d3ecf0adb0560eae3cd09a95fbe64245bf498593f5c42f9258362adad87b689"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.5.0/cuet-0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6757ba7d27b036642f56eb189b09c3ac3c6de39ad08033b83ab5988658544522"
     end
   end
 
