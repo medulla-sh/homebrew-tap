@@ -1,7 +1,7 @@
 class Cuet < Formula
   desc "CLI for managing infrastructure deployment using the cuet framework"
   homepage "https://github.com/medulla-sh/cuet"
-  version "0.10.0"
+  version "0.10.1"
 
   depends_on "cue" => :recommended
   depends_on "opentofu" => :recommended
@@ -9,21 +9,21 @@ class Cuet < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.10.0/cuet-0.10.0-aarch64-apple-darwin.tar.gz"
-      sha256 "8c52651e513cd1d7505e7cf0e46fea96c3b297990721523d11bbe5133711cf8d"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.10.1/cuet-0.10.1-aarch64-apple-darwin.tar.gz"
+      sha256 "836447a524e5080b0a5dbce4c7058c67ab9d8ef792c0d6a5902520177f017937"
     else
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.10.0/cuet-0.10.0-x86_64-apple-darwin.tar.gz"
-      sha256 "80943c77fe084d318fa77423ac2fadb8ce99cf502ee24047d2be77841a1c7721"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.10.1/cuet-0.10.1-x86_64-apple-darwin.tar.gz"
+      sha256 "7924d7f1e5bc82d40f79ba23da4f147e5e05d0257cdb2294d6f1d5e7e965fc14"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.10.0/cuet-0.10.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9cc43faafb2b07810d2e05bf944387ff0c10f3742b2bbf1cd112c2668c926af4"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.10.1/cuet-0.10.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d92e315e339363cfd7c368ca7f4278eb084ad46ad2ef5eda00c09d55743565bd"
     else
-      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.10.0/cuet-0.10.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "dd3cb842a9f83c367843daa4fa743ddd462223b1797c44642333a04efb8888fe"
+      url "https://github.com/medulla-sh/cuet/releases/download/cli%2F0.10.1/cuet-0.10.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "32be183bf852e6d050d759c27a4167664e15621acdfe4baaeab63b00d43f5764"
     end
   end
 
